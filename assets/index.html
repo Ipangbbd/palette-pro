@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Palette Generator V2 ByAli</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Back button -->
+    <button onclick="window.history.back()" class="back-button" aria-label="Go back">
+        <i class="fas fa-arrow-left" aria-hidden="true"></i>
+    </button>
+
+    <!-- Main content -->
+
+    <div class="container">
+        <h1>Palette Pro</h1>
+
+        <div class="controls">
+            <div class="control-group">
+                <div class="control-label">Color Scheme:</div>
+                <div class="color-schemes">
+                    <div class="scheme-option">
+                        <input type="radio" id="scheme-random" name="scheme" value="random" checked>
+                        <label for="scheme-random">Random</label>
+                    </div>
+                    <div class="scheme-option">
+                        <input type="radio" id="scheme-monochrome" name="scheme" value="monochrome">
+                        <label for="scheme-monochrome">Monochrome</label>
+                    </div>
+                    <div class="scheme-option">
+                        <input type="radio" id="scheme-analogous" name="scheme" value="analogous">
+                        <label for="scheme-analogous">Analogous</label>
+                    </div>
+                    <div class="scheme-option">
+                        <input type="radio" id="scheme-complementary" name="scheme" value="complementary">
+                        <label for="scheme-complementary">Complementary</label>
+                    </div>
+                    <div class="scheme-option">
+                        <input type="radio" id="scheme-triadic" name="scheme" value="triadic">
+                        <label for="scheme-triadic">Triadic</label>
+                    </div>
+                    <div class="scheme-option">
+                        <input type="radio" id="scheme-tetradic" name="scheme" value="tetradic">
+                        <label for="scheme-tetradic">Tetradic</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="control-group">
+                <div class="control-label">Colors:</div>
+                <div class="slider-container">
+                    <input type="range" min="2" max="12" value="5" class="slider" id="color-count-slider">
+                    <span class="slider-value" id="color-count-value">5</span>
+                </div>
+            </div>
+
+            <div class="control-group">
+                <button id="generate-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+                    </svg>
+                    Generate
+                </button>
+                <button id="save-palette" class="save-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z" />
+                    </svg>
+                    Save
+                </button>
+            </div>
+        </div>
+
+        <div class="palette" id="palette-container"></div>
+
+        <div class="saved-palettes">
+            <div class="saved-palettes-header">
+                <h2>Saved Palettes</h2>
+                <button class="clear-all" id="clear-all-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="3 6 5 6 21 6"></polyline>
+                        <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
+                        <line x1="10" y1="11" x2="10" y2="17"></line>
+                        <line x1="14" y1="11" x2="14" y2="17"></line>
+                    </svg>
+                    Clear All
+                </button>
+            </div>
+            <div class="saved-palettes-grid" id="saved-palettes-container">
+                <!-- Saved palettes will be hree -->
+            </div>
+        </div>
+    </div>
+
+    <div class="toast" id="toast">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+        </svg>
+        <span id="toast-message">Copied to clipboard!</span>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

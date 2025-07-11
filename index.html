@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palette Pro - Professional Color Palette Generator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <nav class="nav">
+            <div class="logo">Palette Pro</div>
+            <ul class="nav-links">
+                <li><a href="#features">Features</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#rating">Feedback</a></li>
+            </ul>
+            <button class="nav-cta" onclick="window.location.href='assets/index.html'">Try It Now</button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-badge">
+                Campus Project • Open Source
+            </div>
+            <h1 class="hero-title">Create Perfect Color Palettes in Seconds</h1>
+            <p class="hero-subtitle">
+                A student-built alternative to Adobe Color. Generate beautiful, harmonious color combinations for your projects with this open-source palette generator.
+            </p>
+            <div class="hero-cta">
+                <button class="btn btn-primary">
+                    <i class="fas fa-palette"></i>
+                    Generate Palette
+                </button>
+                <button class="btn btn-secondary">
+                    <i class="fas fa-code"></i>
+                    View Source
+                </button>
+            </div>
+            <div class="demo-preview">
+                <div class="demo-card">
+                    <div class="palette-grid">
+                        <div class="color-swatch"></div>
+                        <div class="color-swatch"></div>
+                        <div class="color-swatch"></div>
+                        <div class="color-swatch"></div>
+                        <div class="color-swatch"></div>
+                    </div>
+                    <div class="demo-actions">
+                        <button class="demo-btn"><i class="fas fa-copy"></i> Copy CSS</button>
+                        <button class="demo-btn"><i class="fas fa-save"></i> Save</button>
+                        <button class="demo-btn"><i class="fas fa-download"></i> Export</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Simple Yet Powerful</h2>
+                <p class="section-subtitle">
+                    Built for students and designers who need quick, beautiful color palettes without the complexity.
+                </p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-bolt"></i></div>
+                    <h3 class="feature-title">Lightning Fast</h3>
+                    <p class="feature-description">
+                        No loading screens, no sign-ups. Just click and get beautiful color combinations instantly.
+                    </p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-code"></i></div>
+                    <h3 class="feature-title">Developer Friendly</h3>
+                    <p class="feature-description">
+                        Export to CSS, SCSS, or JSON. Perfect for web developers and designers working on real projects.
+                    </p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-heart"></i></div>
+                    <h3 class="feature-title">100% Free</h3>
+                    <p class="feature-description">
+                        Open source and completely free. No premium features, no hidden costs. Use it for any project.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="about-title">Honest About Our Purpose</h2>
+                    <p class="about-description">
+                        Hi there! I'm Ali, a computer science student who built this as a campus project. I needed a simple color palette generator for my design work but found existing tools either too complex or expensive.
+                    </p>
+                    <div class="about-highlight">
+                        <h4><i class="fas fa-graduation-cap"></i> Academic Origins</h4>
+                        <p>This started as a web development assignment but grew into something I actually use daily. Now it's open source for everyone.</p>
+                    </div>
+                    <p class="about-description">
+                        While Adobe Color is fantastic, sometimes you just need something quick and straightforward. That's exactly what Palette Pro aims to be - a no-nonsense tool that gets the job done.
+                    </p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">2.5K+</span>
+                        <span class="stat-label">Palettes Generated</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">100%</span>
+                        <span class="stat-label">Open Source</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">0</span>
+                        <span class="stat-label">Dollars Spent</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">∞</span>
+                        <span class="stat-label">Usage Limit</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2 class="cta-title">Ready to Create?</h2>
+            <p class="cta-subtitle">
+                Start generating beautiful color palettes right now. No account needed, no strings attached.
+            </p>
+            <button class="cta-button" onclick="window.location.href='assets/index.html'">
+                <i class="fas fa-magic"></i>
+                Start Creating
+            </button>
+        </div>
+    </section>
+
+    <!-- Rating Section -->
+    <section class="rating" id="rating">
+        <div class="container">
+            <div class="rating-content">
+                <h2 class="rating-title">How Did We Do?</h2>
+                <p class="rating-subtitle">
+                    Your feedback helps improve this open-source project. Let us know what you think!
+                </p>
+                <form class="rating-form" action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="YOUR_API_ACCESS">
+                    <input type="hidden" name="subject" value="New Rating for Palette Pro">
+                    
+                    <div class="form-group">
+                        <label class="form-label" for="name">Your Name</label>
+                        <input class="form-input" type="text" id="name" name="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="form-label" for="email">Email (optional)</label>
+                        <input class="form-input" type="email" id="email" name="email">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="form-label">Your Rating</label>
+                        <div class="star-rating">
+                            <span class="star" data-rating="1">★</span>
+                            <span class="star" data-rating="2">★</span>
+                            <span class="star" data-rating="3">★</span>
+                            <span class="star" data-rating="4">★</span>
+                            <span class="star" data-rating="5">★</span>
+                        </div>
+                        <input type="hidden" name="rating" id="rating-value" value="0">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="form-label" for="feedback">Feedback</label>
+                        <textarea class="form-textarea" id="feedback" name="feedback" placeholder="What did you like? What can we improve?"></textarea>
+                    </div>
+                    
+                    <button type="submit" class="form-submit">
+                        <i class="fas fa-paper-plane"></i> Submit Feedback
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Palette Pro</h3>
+                    <p>A simple, open-source color palette generator built as a campus project but now available for everyone.</p>
+                    <div class="social-links">
+                        <a href="https://github.com/ipangbbd" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://instagram.com/codevwithali" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://youtube.com/Ali-Irfansyah_Dev" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <a href="#features">Features</a>
+                    <a href="#about">About</a>
+                    <a href="#rating">Feedback</a>
+                    <a href="https://github.com/ipangbbd/palette-pro">Source Code</a>
+                    <a href="privacy.html">Privacy Policy</a>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Resources</h3>
+                    <a href="https://colorhunt.co" target="_blank">Color Hunt</a>
+                    <a href="https://coolors.co" target="_blank">Coolors</a>
+                    <a href="https://adobe.com/color" target="_blank">Adobe Color</a>
+                    <a href="https://color.adobe.com/create/color-wheel" target="_blank">Color Wheel</a>
+                    <a href="https://webgradients.com" target="_blank">Web Gradients</a>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>Made with <i class="fas fa-heart" style="color: var(--secondary);"></i> by Ali for a campus project</p>
+                <p>&copy; <span id="year"></span> Palette Pro. Open sourced under MIT License.</p>
+                <p>All icons from <a href="https://fontawesome.com" target="_blank" style="color: var(--primary-light);">Font Awesome</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
