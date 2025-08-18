@@ -105,4 +105,3 @@ Released under the **MIT License** – see the [LICENSE](LICENSE) file.
 ---
 
 👨‍💻 Developed by [@ipangbbd](https://github.com/ipangbbd)
-```
